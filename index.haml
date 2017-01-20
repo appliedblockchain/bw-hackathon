@@ -4,7 +4,7 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
 
-    %title WebSlides: Making HTML presentations easy
+    %title Blockchain Hackathon presentation
     -# %meta{:content => "WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.", :name => "description"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&subset=latin-ext", :rel => "stylesheet"}/
     / CSS Base
@@ -103,11 +103,12 @@
               %h2 Private
               %ul
                 %li
-                  %h4 Hosting
+                  %h4 Privacy
                 %li
                   %h4 Backups
                 %li
-                  %h4 Privacy
+                  %h4 Security
+
             .content-left
               %h2 Public
               %ul
@@ -356,7 +357,7 @@
                     data = _data;
                   }
 
-                  function get() constant returns (bytes32 _data) {
+                  function get() constant returns (bytes32 _data){
                     return data;
                   }
                 }
@@ -439,8 +440,8 @@
                 contract EthLock {
                   uint lockedFundsAmount;
 
-                  address public owner = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;
-                  address public recipient = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;
+                  address public owner = 0x43E8b2A4c010837D70861eB41a3752d992BD9F39;
+                  address public recipient = 0x43E8b2A4c010837D70861eB41a3752d992BD9F39;
 
                   function unlockFunds() {
                     if(msg.sender == owner) {
@@ -448,7 +449,7 @@
                     }
                   }
                 }
-                //  0xbe3741bc0ecc248cb15d778ecdf1aa59887fc6ef
+                //  0xa169ee1e025f1c52897b063fc3a094ec10478b62 
         -#
 
 

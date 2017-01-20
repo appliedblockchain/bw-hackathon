@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <title>WebSlides: Making HTML presentations easy</title>
+    <title>Blockchain Hackathon presentation</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext' rel='stylesheet'>
     <!-- CSS Base -->
     <link href='static/css/base.css' media='all' rel='stylesheet' type='text/css'>
@@ -74,13 +74,13 @@
               <h2>Private</h2>
               <ul>
                 <li>
-                  <h4>Hosting</h4>
+                  <h4>Privacy</h4>
                 </li>
                 <li>
                   <h4>Backups</h4>
                 </li>
                 <li>
-                  <h4>Privacy</h4>
+                  <h4>Security</h4>
                 </li>
               </ul>
             </div>
@@ -272,7 +272,7 @@
             <h3>SimpleStorage</h3>
             <h5>a simple ethereum contract</h5>
             <div class='s20'></div>
-            <pre class='f-more'>contract SimpleStorage {&#x000A;  bytes32 data;&#x000A;&#x000A;  function set(bytes32 _data) {&#x000A;    data = _data;&#x000A;  }&#x000A;&#x000A;  function get() constant returns (bytes32 _data) {&#x000A;    return data;&#x000A;  }&#x000A;}&#x000A;</pre>
+            <pre class='f-more'>contract SimpleStorage {&#x000A;  bytes32 data;&#x000A;&#x000A;  function set(bytes32 _data) {&#x000A;    data = _data;&#x000A;  }&#x000A;&#x000A;  function get() constant returns (bytes32 _data){&#x000A;    return data;&#x000A;  }&#x000A;}&#x000A;</pre>
           </div>
         </section>
         <section>
@@ -304,7 +304,7 @@
             <h3>Eth-Lock contract</h3>
             <h5>configurable</h5>
             <div class='s20'></div>
-            <pre class='f-more'>// pragma solidity ^0.4.8&#x000A;&#x000A;contract EthLock {&#x000A;  uint lockedFundsAmount;&#x000A;&#x000A;  address public owner = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;&#x000A;  address public recipient = 0x6e57c3777d6ca24c26bde462d22b16e41e5fe5f2;&#x000A;&#x000A;  function unlockFunds() {&#x000A;    if(msg.sender == owner) {&#x000A;      recipient.send(lockedFundsAmount);&#x000A;    }&#x000A;  }&#x000A;}&#x000A;//  0xbe3741bc0ecc248cb15d778ecdf1aa59887fc6ef</pre>
+            <pre class='f-more'>// pragma solidity ^0.4.8&#x000A;&#x000A;contract EthLock {&#x000A;  uint lockedFundsAmount;&#x000A;&#x000A;  address public owner = 0x43E8b2A4c010837D70861eB41a3752d992BD9F39;&#x000A;  address public recipient = 0x43E8b2A4c010837D70861eB41a3752d992BD9F39;&#x000A;&#x000A;  function unlockFunds() {&#x000A;    if(msg.sender == owner) {&#x000A;      recipient.send(lockedFundsAmount);&#x000A;    }&#x000A;  }&#x000A;}&#x000A;//  0xa169ee1e025f1c52897b063fc3a094ec10478b62</pre>
           </div>
         </section>
         <section>
